@@ -1,171 +1,108 @@
-# 🎓 Students Table – React Frontend Assignment
+# 🎓 Students Table
 
-A modern **React.js frontend application** that manages student data with full **CRUD operations** using local state and browser storage.
-The project includes validation, simulated loading, and Excel export functionality.
-
-This project was built as part of a **Full Stack Assignment (Frontend Mandatory, Backend Optional)**.
+A modern **React.js frontend application** for managing student records with full **CRUD operations**, live search, Excel export, and a polished dark UI.
 
 ---
 
-# 🚀 Live Demo
+## 🚀 Live Demo
 
-Deployed Project:
-https://your-vercel-link.vercel.app
-
----
-
-# 📂 GitHub Repository
-
-https://github.com/yourusername/students-table
+[[https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)](https://students-table-react-wl6v.vercel.app/)
 
 ---
 
-# 🛠️ Tech Stack
+## 📂 Repository
 
-* React.js
-* JavaScript (ES6)
-* CSS (Neon Dark UI)
-* XLSX (Excel export)
-* File Saver
+[https://github.com/yourusername/students-table]([https://github.com/yourusername/students-table](https://github.com/ABHI4570165/students-table-react))
 
 ---
 
-# ✨ Features
+## 🛠️ Tech Stack
 
-### Student Management
-
-* View student list in table format
-* Columns: **Name, Email, Age, Actions**
-
-### CRUD Operations
-
-* **Create** new student
-* **Read** student list
-* **Update** existing student (pre-filled form)
-* **Delete** student with confirmation dialog
-
-### Form Validation
-
-* All fields mandatory
-* Valid email format required
-
-### UI Features
-
-* Neon Dark themed professional UI
-* Responsive layout
-* Hover effects
-* Clean dashboard design
-
-### Loading Simulation
-
-* Simulated loading state when the application starts
-
-### Excel Export
-
-* Download all student data as an **Excel file**
-
-### Data Persistence
-
-* Data stored using **browser localStorage**
-* Data remains after page refresh
+| Technology | Purpose |
+|---|---|
+| React.js | UI framework |
+| JavaScript (ES6+) | Application logic |
+| CSS3 | Custom dark glassmorphism styling |
+| xlsx | Excel file generation |
+| file-saver | File download trigger |
 
 ---
 
-# 📦 Installation & Setup
+## ✨ Features
 
-Clone the repository:
+- **Add Student** — form with full validation (name, email, age all required; valid email format enforced)
+- **Edit Student** — pre-filled form, same validations apply
+- **Delete Student** — confirmation dialog before removal
+- **Live Search** — filters table by name or email in real time with highlighted matches
+- **Success Alerts** — portal-based modal confirmation after add and edit actions
+- **Excel Export** — exports current (filtered or full) list as `.xlsx`
+- **Simulated Loading** — 3-second loading state with spinner on form submit
+- **Navbar** — sticky navigation with Add Student, Students List, and Download Excel tabs
+- **Responsive** — table layout on desktop, card layout on mobile
+
+---
+
+## 📦 Installation
 
 ```bash
+# 1. Clone the repository
 git clone https://github.com/yourusername/students-table.git
-```
 
-Navigate to the project folder:
-
-```bash
+# 2. Navigate into the project
 cd students-table
-```
 
-Install dependencies:
-
-```bash
+# 3. Install dependencies
 npm install
-```
 
-Install required libraries:
-
-```bash
+# 4. Install required libraries
 npm install xlsx file-saver
-```
 
-Start the development server:
-
-```bash
+# 5. Start the development server
 npm start
 ```
 
-The application will run on:
-
-```
-http://localhost:3000
-```
+App runs at `http://localhost:3000`
 
 ---
 
-# 📁 Project Structure
+## 📁 Project Structure
 
 ```
-students-table
-│
-├── src
-│   ├── components
-│   │   ├── StudentForm.js
-│   │   └── StudentTable.js
-│   │
-│   ├── App.js
-│   ├── App.css
-│   └── index.js
-│
+students-table/
+├── src/
+│   ├── App.js           # Root component — state, navbar, routing between tabs
+│   ├── App.css          # Global styles
+│   ├── StudentForm.js   # Add / Edit form with validation and loading state
+│   ├── StudentTable.js  # Table, search, delete confirmation, Excel export
+│   └── index.js         # React entry point
 ├── package.json
 └── README.md
 ```
 
 ---
 
-# ⚙️ How the Application Works
+## 📊 Excel Export
 
-The application works **entirely on the frontend**.
+Uses **xlsx** to convert student JSON data into a spreadsheet and **file-saver** to trigger the browser download.
 
-Student data is stored in:
-
-```
-localStorage
-```
-
-This allows:
-
-* Data persistence across refresh
-* No backend required
-* Fast CRUD operations using React state
+- Exports filtered results when a search is active
+- Exports all records when no search is applied
+- Output file: `students.xlsx`
 
 ---
 
-# 📊 Excel Download
+## ⚙️ How It Works
 
-The project uses:
+All data is managed in **React component state** (`useState`). No backend or database is required. Data resets on page refresh — this is intentional for the assignment scope.
 
-* **xlsx** → to convert JSON data to Excel
-* **file-saver** → to download the file
-
-Users can export the entire student table as:
-
-```
-students.xlsx
-```
+CRUD flow:
+- **Create** → validated form → 3s simulated load → student added to state → success alert
+- **Read** → students rendered in table (desktop) or cards (mobile) with live search filtering
+- **Update** → edit button pre-fills form → same validation → success alert on save
+- **Delete** → confirmation modal via React Portal → removed from state
 
 ---
 
+## 📜 License
 
-
-# 📜 License
-
-This project is created for **educational and assignment purposes**.
+Built for educational and assignment purposes.
