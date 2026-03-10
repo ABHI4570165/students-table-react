@@ -6,13 +6,13 @@ A modern **React.js frontend application** for managing student records with ful
 
 ## 🚀 Live Demo
 
-[[https://your-vercel-link.vercel.app](https://your-vercel-link.vercel.app)](https://students-table-react-wl6v.vercel.app/)
+https://students-table-react-wl6v.vercel.app/
 
 ---
 
 ## 📂 Repository
 
-[https://github.com/yourusername/students-table]([https://github.com/yourusername/students-table](https://github.com/ABHI4570165/students-table-react))
+https://github.com/ABHI4570165/students-table-react
 
 ---
 
@@ -46,7 +46,7 @@ A modern **React.js frontend application** for managing student records with ful
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/students-table.git
+git clone https://github.com/ABHI4570165/students-table.git
 
 # 2. Navigate into the project
 cd students-table
