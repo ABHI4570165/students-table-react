@@ -90,7 +90,7 @@ export default function App() {
         <div className="navbar-inner">
           <div className="navbar-brand">
             <span className="brand-icon">🎓</span>
-            <span className="brand-name">STUDENT PORTEL</span>
+            <span className="brand-name">STUDENT PORTAL</span>
           </div>
 
           <div className="nav-links">
