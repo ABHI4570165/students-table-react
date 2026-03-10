@@ -164,63 +164,7 @@ students.xlsx
 
 ---
 
-# 🌐 Deployment
 
-The project can be deployed using **Vercel or Netlify**.
-
-### Deploy using Vercel
-
-1. Push the project to GitHub
-2. Go to https://vercel.com
-3. Import the GitHub repository
-4. Click **Deploy**
-
-Vercel will automatically build and host the React app.
-
----
-
-# 📌 Assignment Requirements Covered
-
-| Requirement       | Status |
-| ----------------- | ------ |
-| Student Table     | ✅      |
-| Add Student       | ✅      |
-| Edit Student      | ✅      |
-| Delete Student    | ✅      |
-| Form Validation   | ✅      |
-| Simulated Loading | ✅      |
-| Excel Download    | ✅      |
-| Frontend Only     | ✅      |
-| Deployment        | ✅      |
-
----
-
-# ⭐ Optional Backend (Bonus)
-
-The assignment also suggested an optional backend using:
-
-* NestJS
-* PostgreSQL
-
-This implementation focuses only on the **mandatory frontend requirement**.
-
----
-
-# 👨‍💻 Author
-
-**Abhishek Y S**
-
-Tech Stack:
-
-* Java Full Stack
-* React
-* HTML
-* CSS
-* JavaScript
-* SQL
-* Spring Boot
-
----
 
 # 📜 License
 
